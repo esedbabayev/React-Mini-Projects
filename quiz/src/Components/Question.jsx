@@ -2,8 +2,6 @@ import React from "react";
 
 const Question = (props) => {
 
-  console.log(props.question);
-
   return (
     <div className="bg-red-500 py-16 text-center">
       <p className="font-poppins text-sm text-white opacity-40 mb-4">

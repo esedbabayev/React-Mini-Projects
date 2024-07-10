@@ -10,6 +10,7 @@ import "./index.css";
 const App = () => {
   const [questionId, setQuestionId] = useState(1);
   const [question, setQuestion] = useState();
+  const [selectedOption, setSelectedOption] = useState(null);
 
   const fetchQuestionsFromJsonServer = async () => {
     const response = await fetch(
@@ -18,14 +19,20 @@ const App = () => {
     const data = await response.json();
 
     setQuestion(data);
+    setSelectedOption(null);
   };
 
   useEffect(() => {
     fetchQuestionsFromJsonServer();
   }, [questionId]);
 
-  const selectOption = () => {
-    setQuestionId(questionId + 1);
+  const selectOption = (event) => {
+
+    setSelectedOption(event.target.textContent)
+
+    setTimeout(() => {
+      setQuestionId(questionId + 1)
+    }, 1000)
   };
 
   // const fetchQuestionsFromJsonServer = async () => {
@@ -41,7 +48,7 @@ const App = () => {
     <div className="h-screen flex items-center justify-center">
       <div className="container rounded-xl overflow-hidden">
         <Question question={question} questionId={questionId} />
-        <Options selectOption={selectOption} question={question} />
+        <Options selectOption={selectOption} question={question} selectedOption={selectedOption} />
       </div>
     </div>
   );
