@@ -11,6 +11,7 @@ const App = () => {
   const [questionId, setQuestionId] = useState(1);
   const [question, setQuestion] = useState();
   const [selectedOption, setSelectedOption] = useState(null);
+  const [totalPoints, setTotalPoints] = useState(0);
 
   const fetchQuestionsFromJsonServer = async () => {
     const response = await fetch(
@@ -27,16 +28,23 @@ const App = () => {
   }, [questionId]);
 
   const selectOption = (event) => {
+    setSelectedOption(event.target.textContent);
 
-    setSelectedOption(event.target.textContent)
+    const correct = event.target.textContent === question.answer;
+
+    if (correct) {
+      setTotalPoints(totalPoints + 1);
+    }
+
+    console.log(totalPoints);
 
     setTimeout(() => {
-      setQuestionId(questionId + 1)
-    }, 1000)
+      setQuestionId(questionId + 1);
+    }, 1000);
   };
 
   // const fetchQuestionsFromJsonServer = async () => {
-  //   fetch("https//localhost:3001/questions")
+  //   fetch("https//localhost:3000/questions")
   //     .then((response) => response.json())
   //     .then((data) => console.log(data))
   //     .catch((error) => console.log(error));
@@ -47,8 +55,18 @@ const App = () => {
   return (
     <div className="h-screen flex items-center justify-center">
       <div className="container rounded-xl overflow-hidden">
-        <Question question={question} questionId={questionId} />
-        <Options selectOption={selectOption} question={question} selectedOption={selectedOption} />
+        <Question
+          question={question}
+          questionId={questionId}
+          totalPoints={totalPoints}
+        />
+        {questionId <= 20 && (
+          <Options
+            selectOption={selectOption}
+            question={question}
+            selectedOption={selectedOption}
+          />
+        )}
       </div>
     </div>
   );
