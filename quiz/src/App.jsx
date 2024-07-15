@@ -36,8 +36,6 @@ const App = () => {
       setTotalPoints(totalPoints + 1);
     }
 
-    console.log(totalPoints);
-
     setTimeout(() => {
       setQuestionId(questionId + 1);
     }, 1000);
