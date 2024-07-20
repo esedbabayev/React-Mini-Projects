@@ -4,7 +4,7 @@ import DataGrid from "./components/DataGrid";
 import InputField from "./components/InputField";
 
 const App = () => {
-  const [searhedIds, setSearchedIds] = useState();
+  const [searchedIds, setSearchedIds] = useState();
   const postIdRef = useRef();
   const userIdRef = useRef();
 
@@ -32,23 +32,28 @@ const App = () => {
     searchByIdHandler();
   }, []);
 
+  const deleteDataHandler = async () => {
+    
+  }
+
   return (
     <div className="p-64">
       <div className="flex justify-center space-x-4 mb-4">
-        <Button label="Reload" />
-        <Button label="Clean" />
-        <Button label="Delete" />
+        <button className="bg-blue-500 text-white px-4 py-2 rounded">
+          Reload
+        </button>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded">
+          Clean
+        </button>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded">
+          Delete
+        </button>
       </div>
-      {
-        searhedIds.filter((userId,id) => userId === posts.userId && id === posts.id
-      )
-      
-    }
-    <DataGrid />
+      <DataGrid searchedIds={searchedIds} />
       <div className="flex justify-center space-x-4 mt-4">
         <InputField ref={postIdRef} placeholder="Post ID" />
         <InputField ref={userIdRef} placeholder="User ID" />
-        <Button searchByIdHandler={() => searchByIdHandler()} label="Get" />
+        <Button searchByIdHandler={searchByIdHandler} label="Get" />
       </div>
     </div>
   );

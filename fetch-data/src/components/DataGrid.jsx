@@ -22,9 +22,7 @@ const DataGrid = (props) => {
         <div className="font-bold">Post ID</div>
         <div className="font-bold">User ID</div>
         <div className="font-bold">Titles</div>
-        <div>
-
-        </div>
+        <div></div>
       </div>
       {rows.map(
         (row, index) =>
