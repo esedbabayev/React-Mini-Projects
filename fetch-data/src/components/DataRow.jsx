@@ -8,7 +8,7 @@ const DataRow = (props) => {
       <div>{props.id}</div>
       <div>{props.title}</div>
       <div>
-        <Checkbox checked={checked} />
+        <Checkbox />
       </div>
     </div>
   );
