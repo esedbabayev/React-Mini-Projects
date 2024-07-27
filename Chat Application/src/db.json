@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": "0.4513127141873463",
+      "userName": "esedbabayev",
+      "password": "salam123",
+      "fullName": "Asad Babayev",
+      "profilePic": "https://avatar.iran.liara.run/username?username=Asad+Babayev"
+    },
+    {
+      "id": "0.12039352315237273",
+      "userName": "hsynmrzyv",
+      "password": "salammmm",
+      "fullName": "Huseyn Mirzayev",
+      "profilePic": "https://avatar.iran.liara.run/username?username=Huseyn+Mirzayev"
+    },
+    {
+      "id": "0.18814151230297949",
+      "userName": "hdkdb2793",
+      "password": "salam321",
+      "fullName": "Ferid Babayev",
+      "profilePic": "https://avatar.iran.liara.run/username?username=Ferid+Babayev"
+    }
+  ],
+  "messages": [
+    {
+      "id": "0.9091168405043224",
+      "content": "salam",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.4513127141873463",
+      "sentTime": "2024-07-21T09:02:45.618Z"
+    },
+    {
+      "id": "0.46877593814966323",
+      "content": "necesen",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.4513127141873463",
+      "sentTime": "2024-07-21T11:55:53.023Z"
+    },
+    {
+      "id": "0.4790789070559833",
+      "content": "as",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.4513127141873463",
+      "sentTime": "2024-07-21T11:56:18.504Z"
+    },
+    {
+      "id": "0.48391039029527083",
+      "content": "ss",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.4513127141873463",
+      "sentTime": "2024-07-21T11:56:32.947Z"
+    },
+    {
+      "id": "0.8831794023138475",
+      "content": "dwedwe",
+      "senderId": "0.4513127141873463",
+      "receiverId": "0.18814151230297949",
+      "sentTime": "2024-07-21T12:37:58.733Z"
+    },
+    {
+      "id": "0.6926034548553377",
+      "content": "dsa",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.4513127141873463",
+      "sentTime": "2024-07-21T12:43:15.831Z"
+    },
+    {
+      "id": "0.5626620165889711",
+      "content": "hello world",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.12039352315237273",
+      "sentTime": "2024-07-21T14:08:28.281Z"
+    },
+    {
+      "id": "0.1810125117252035",
+      "content": "bura",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.4513127141873463",
+      "sentTime": "2024-07-21T14:16:32.027Z"
+    },
+    {
+      "id": "0.7986881072479683",
+      "content": "niye",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.4513127141873463",
+      "sentTime": "2024-07-21T14:16:38.825Z"
+    },
+    {
+      "id": "0.21156297066869745",
+      "content": "isleyir",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.4513127141873463",
+      "sentTime": "2024-07-21T14:16:47.461Z"
+    },
+    {
+      "id": "0.04668211269934042",
+      "content": "scroll",
+      "senderId": "0.18814151230297949",
+      "receiverId": "0.4513127141873463",
+      "sentTime": "2024-07-21T14:21:00.041Z"
+    }
+  ]
+}
